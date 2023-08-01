@@ -6,6 +6,10 @@ import nltk
 import spacy
 import numpy as np
 
+#Downloading some dependencies
+nltk.download('stopwords')
+nltk.download('punkt')
+nltk.download('wordnet')
 
 
 def preprocess():
