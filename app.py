@@ -43,7 +43,7 @@ def preprocess():
 
     def remove_contradictions(text):
 
-      return " ".join([contractions.fix(word.text) for word in nlp(text)])
+              return " ".join([contractions.fix(word.text) for word in nlp(text)])
 
     df['text'] = df['text'].apply(remove_contradictions)
 
@@ -80,7 +80,7 @@ def preprocess():
 
     def check_spell(text):
 
-      return check(text)
+            return check(text)
 
     df['text'] = df['text'].apply(check_spell)
 
@@ -130,7 +130,7 @@ def preprocess():
     
     def Stemming(text):
 
-      return " ".join([ps.stem(word.text) for word in nlp(text)])
+            return " ".join([ps.stem(word.text) for word in nlp(text)])
 
     df['text'] = df['text'].apply(Stemming)
 
